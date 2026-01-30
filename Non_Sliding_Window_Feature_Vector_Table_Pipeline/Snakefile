@@ -1,0 +1,14 @@
+# Snakefile
+
+# Include the configfile:
+configfile: "config.yaml"
+
+# Include the rule for modifying VCFs
+include: "rules/modify_vcf.smk"
+include: "rules/vcf_Fst.smk"
+include: "rules/build_feature_vector_table.smk"
+
+# Final output rule:
+rule all:
+    input:
+        rules.build_feature_vector_table.output

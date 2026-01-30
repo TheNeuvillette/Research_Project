@@ -1,0 +1,22 @@
+# Configfile:
+
+# General experiment configuration:
+folder_name: "experiment2"            # Must be changed with new simulation 
+data_type: "snp"
+generations: 15000
+sim_name: "invLAA"
+sim_no: 2                             # Must be changed with new simulation
+
+# Define the input VCF files:
+input_vcfs:
+  - input_vcfs/invLAA_p1_15000_2.vcf  # Must be changed with new simulation
+  - input_vcfs/invLAA_p2_15000_2.vcf  # Must be changed with new simulation
+
+# Subwindow size:
+subwindow_size: 1000
+
+# Selected sites:
+selected_sites: [30000,90000]
+
+# Subwindow overlap:
+subwindow_overlap: 3

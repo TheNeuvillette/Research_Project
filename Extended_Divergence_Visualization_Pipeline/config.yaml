@@ -1,0 +1,20 @@
+# Configfile:
+
+# General experiment configuration:
+folder_name: "experiment1"            # Must be changed with new simulation 
+data_type: "snp"
+generations: 15000
+sim_name: "invLAA"
+sim_no: 1                             # Must be changed with new simulation
+
+# Define the input VCF files:
+input_vcfs:
+  - input_vcfs/invLAA_p1_15000_1.vcf  # Must be changed with new simulation
+  - input_vcfs/invLAA_p2_15000_1.vcf  # Must be changed with new simulation
+
+# Window size:
+window_size: 200
+window_step: 100
+
+# Mode: "regular" or "interactive"
+mode: "interactive"
