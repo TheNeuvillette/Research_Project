@@ -19,7 +19,7 @@ To verify correct implementation and to assess whether the feature vectors can d
 - BCFtools: Version 1.12
 - VCFtools: Version 0.1.16
 
-### R Libraries 
+### R Libraries:
 - Ggplot2: Version 3.3.6 
 - Shiny: Version 1.7.1 
 - Data.table: Version 1.14.2
