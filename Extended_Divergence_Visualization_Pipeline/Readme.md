@@ -6,7 +6,7 @@ In contrast to the standard pipeline, the extended pipeline supports two modes: 
 These modes can be specified in the config.yaml file. The regular mode is indentical to the standard pipeline: It takes 2 vcf files from the simulations, post-processes them into a single file, calculates the windowed Fst and plots a single graph of Fst along chromosome, given the specified window size & step. On the other hand, the interactive pipeline creates an interactive R shiny app, where an Fst graph as funciton of the position in the chromosome is shown, which can be updated during runtime with window size and step. The interactive pipeline also takes 2 vcf files from the simulations, post-processes them into a single file, yet then calculates the per-site Fst, which is then used for calculating windows.
 
 ## 1. Usage of the pipeline:
-# 1.1. Regular mode:
+### 1.1. Regular mode:
 
 Step 1: Config File:
 Set the mode to "regular".
@@ -17,7 +17,7 @@ cd to "Interactive_Windows_Pipeline", then sbatch the snakemake.sh under scripts
 
 Step 3: Retrieve the Fst plots (and other results) under results/.../plots
 
-# 1.2. Interactive mode:
+### 1.2. Interactive mode:
 
 Step 1: Config File:
 Set the mode to "interactive".
